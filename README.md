@@ -2,6 +2,8 @@
 
 [Live experience](https://www.marqops.com/webmcp) · [Demo video](https://youtu.be/0x0P1VLcgbU) · [Security model](SECURITY.md)
 
+![MarqOps turns a marketing dashboard into a page-scoped WebMCP evidence layer](assets/cover.png)
+
 Marketing dashboards were designed for humans to click through, not for agents to understand. An agent can read pixels, but pixels do not tell it which metric is authoritative, where a claim came from, or whether an action is safe.
 
 MarqOps uses WebMCP to turn a live reporting workspace into a narrow, structured evidence surface. A person keeps the familiar dashboard while their agent can inspect the same signed-in context, trace a metric to its source, and prepare a cautious next action. The agent does not need credentials copied into a separate integration and does not guess its way through the UI.
