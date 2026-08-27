@@ -8,6 +8,17 @@ Marketing dashboards were designed for humans to click through, not for agents t
 
 MarqOps uses WebMCP to turn a live reporting workspace into a narrow, structured evidence surface. A person keeps the familiar dashboard while their agent can inspect the same signed-in context, trace a metric to its source, and prepare a cautious next action. The agent does not need credentials copied into a separate integration and does not guess its way through the UI.
 
+## What was built for the challenge
+
+MarqOps existed before the WebMCP Challenge; the agent-native layer did not. The WebMCP work was implemented after the submission period opened:
+
+- **August 26, 2026:** page-scoped authenticated reporting tools, same-origin server execution, tenant isolation, output policy, invocation receipts, and adversarial end-to-end tests (`46fff5d`).
+- **August 27, 2026:** no-login public WebMCP explorer, five anonymized tools, marketing experience, metadata, and production deployment (`cc1a9a1`).
+- **August 27, 2026:** evidence-based public security language and explicit non-certification disclosure (`cac6340`).
+- **August 27, 2026:** this standalone, runnable, MIT-licensed challenge reference and test suite.
+
+The pre-existing SaaS supplied the reporting problem, human interface, authentication, and data services. The WebMCP capability model, tool contracts, security gates, public explorer, receipts, tests, open-source reference, and challenge demonstration are new work.
+
 ## What people and agents can do together
 
 1. The person opens the live reporting workspace.

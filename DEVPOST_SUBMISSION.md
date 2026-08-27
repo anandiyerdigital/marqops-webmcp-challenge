@@ -68,6 +68,12 @@ The public explorer uses a frozen, anonymized snapshot so judges can test the co
 
 We tested positive behavior and negative boundaries. Cross-origin requests return 403, unsigned private calls return 401, cross-tenant resources return 404, oversized payloads return 413, and secret-shaped outputs are blocked. The full application passed 238 unit and integration checks, 400 production route builds, targeted authenticated WebMCP end-to-end tests, and public SEO/sanity checks at release time.
 
+## What was new for this challenge
+
+MarqOps existed before the challenge; its agent-native capability did not. We implemented the WebMCP layer after the submission period opened: authenticated, tenant-scoped reporting tools and their adversarial tests on August 26 (`46fff5d`); the no-login public explorer and production WebMCP marketing experience on August 27 (`cc1a9a1`); and the evidence-based security-language remediation on August 27 (`cac6340`). We also published this standalone MIT-licensed reference implementation and its tests on August 27.
+
+The pre-existing SaaS supplied the marketing-reporting problem, human interface, authentication, and data services. The WebMCP tool contracts, capability boundaries, server execution path, receipts, security tests, public explorer, open-source reference, and demonstration video are challenge-period work.
+
 ## Challenges we ran into
 
 The hardest problem was not registering a tool. It was deciding what an agent must never be allowed to infer or do.
