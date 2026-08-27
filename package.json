@@ -1,0 +1,13 @@
+{
+  "name": "marqops-webmcp-challenge",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "A runnable, security-first WebMCP reference implementation from MarqOps.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
+

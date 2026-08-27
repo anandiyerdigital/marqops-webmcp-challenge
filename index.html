@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A security-first WebMCP reporting reference implementation from MarqOps." />
+    <title>MarqOps WebMCP Reference</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/webmcp.js"></script>
+  </head>
+  <body>
+    <main>
+      <nav><span class="brand">MARQOPS</span><a href="https://www.marqops.com/webmcp">Live production experience ↗</a></nav>
+      <header>
+        <p class="eyebrow">AGENT-NATIVE MARKETING REPORTING</p>
+        <h1>Give the agent evidence.<br /><em>Keep the human in control.</em></h1>
+        <p class="lede">Five narrowly scoped, read-only WebMCP tools let an agent inspect an anonymized marketing report, trace claims to sources, and recommend a next action without changing customer data.</p>
+        <div id="support" class="status">Checking WebMCP support…</div>
+      </header>
+
+      <section class="workspace" aria-label="WebMCP demo workspace">
+        <aside>
+          <p class="label">AVAILABLE SITE TOOLS</p>
+          <div id="tools"></div>
+        </aside>
+        <article>
+          <p class="label">ASK THE WORKSPACE</p>
+          <h2 id="question">What changed in this reporting period?</h2>
+          <div class="prompt-row">
+            <button data-prompt="snapshot">Snapshot</button>
+            <button data-prompt="evidence">Trace evidence</button>
+            <button data-prompt="next">Next action</button>
+          </div>
+          <button id="run" class="primary">Run the same bounded tool call →</button>
+          <div id="answer" class="answer" aria-live="polite">Choose a prompt and run a tool.</div>
+        </article>
+        <aside>
+          <p class="label">VERIFIABLE RECEIPT</p>
+          <dl id="receipt">
+            <div><dt>scope</dt><dd>anonymized snapshot</dd></div>
+            <div><dt>access</dt><dd>read-only</dd></div>
+            <div><dt>state changed</dt><dd>false</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="principles">
+        <div><strong>5</strong><span>public tools</span></div>
+        <div><strong>0</strong><span>mutating actions</span></div>
+        <div><strong>100%</strong><span>strict schemas</span></div>
+      </section>
+      <footer>Security-hardened reference implementation. No internet-connected product is guaranteed invulnerable. MarqOps is not currently SOC 2 audited or certified.</footer>
+    </main>
+  </body>
+</html>
+
